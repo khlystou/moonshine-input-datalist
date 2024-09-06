@@ -22,11 +22,8 @@ class Datalist extends InputExtension
             $this->name = str()->random();
         }
 
-        $this->sData = [
-            "input: \$refs.extensionInput",
-            "init() {
-                this.input.setAttribute('list', '{$this->getName()}')
-            }"
+        $this->xInit = [
+            "\$refs.extensionInput.setAttribute('list', '{$this->getName()}')
         ];
     }
 
