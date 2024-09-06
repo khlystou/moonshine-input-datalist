@@ -1,55 +1,35 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": "Description",
-    "keywords": ["keyword"],
+    "name": "khlystou/moonshine-input-datalist",
+    "description": "Datalist input extension for MoonShine 2.0",
+    "keywords": ["moonshine", "input extension", "datalist"],
     "type": "library",
-    "homepage": "https://moonshine.cutcode.dev",
+    "homepage": "https://github.com/khlystou",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/:vendor_name/:package_name/issues",
-        "source": "https://github.com/:vendor_name/:package_name"
+        "issues": "https://github.com/khlystou/moonshine-input-datalist/issues",
+        "source": "https://github.com/khlystou/moonshine-input-datalist"
     },
     "authors": [
         {
-            "name": "Author name",
-            "email": "author@example.com",
-            "homepage": "https://example.com"
+            "name": "Vasili Khlystou",
+            "email": "khlystou@gmail.com"
         }
     ],
     "require": {
-        "php": "^8.0|^8.1|^8.2",
-        "ext-curl": "*",
-        "ext-json": "*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5.8",
-        "mockery/mockery": "^1.4.4",
-        "phpstan/phpstan": "^1.4.7",
-        "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0",
-        "brianium/paratest": "^6.8"
+        "php": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\PackageName\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\PackageName\\Tests\\": "tests/",
-            "VendorName\\PackageName\\Database\\Factories\\": "database/factories/"
+            "Khlystou\\DatalistInputExtension\\": "src/"
         }
     },
     "conflict": {
-        "moonshine/moonshine": "<1.52"
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        "moonshine/moonshine": "<2.0"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\PackageName\\Providers\\PackageNameServiceProvider"
+                "Khlystou\\DatalistInputExtension\\Providers\\DatalistServiceProvider"
             ]
         }
     }
