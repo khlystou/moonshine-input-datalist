@@ -13,7 +13,7 @@ class Datalist extends InputExtension
 
     public function __construct(
         protected array|Collection $items,
-        protected ?string $name
+        protected ?string $name = null
     )
     {
         parent::__construct($items);
@@ -25,7 +25,7 @@ class Datalist extends InputExtension
         $this->sData = [
             "input: \$refs.extensionInput",
             "init() {
-                input.setAttribute('list', '{$this->getName()}')
+                this.input.setAttribute('list', '{$this->getName()}')
             }"
         ];
     }
