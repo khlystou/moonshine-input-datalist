@@ -23,7 +23,7 @@ class Datalist extends InputExtension
         }
 
         $this->xInit = [
-            "\$refs.extensionInput.setAttribute('list', '{$this->getName()}')
+            "\$refs.extensionInput.setAttribute('list', '{$this->getName()}')",
         ];
     }
 
