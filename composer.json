@@ -1,6 +1,6 @@
 {
     "name": "khlystou/moonshine-input-datalist",
-    "description": "Datalist input extension for MoonShine 2.0",
+    "description": "Input extension - display the datalist for input",
     "keywords": ["moonshine", "input extension", "datalist"],
     "type": "library",
     "homepage": "https://github.com/khlystou",
